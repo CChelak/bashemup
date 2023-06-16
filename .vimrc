@@ -1,3 +1,5 @@
+" === Miscellaneous ===
+
 set cursorline
 
 " Setting tabs vs space specs for file types
@@ -6,7 +8,6 @@ autocmd FileType python set tabstop=4|set shiftwidth=4|set expandtab
 
 set listchars=tab:-->,space:·
 set list
-set tags+=~/tags/osgeo_tags
 set shellcmdflag=-ic
 
 if (has("termguicolors"))
@@ -19,4 +20,20 @@ endif
 
 syntax enable
 
+" === Plugins ===
 
+" Install and use plugins with Vim Plug
+call plug#begin()
+
+" For Dockerfile syntax highlighting
+Plug 'ekalinin/Dockerfile.vim'
+
+" Getting a source tree to the side
+Plug 'preservim/nerdtree'
+
+call plug#end()
+
+" --- Plugin shortcuts ---
+
+" Type '\nt' to toggle the tree
+map <Leader>nt :NERDTreeToggle<CR>
