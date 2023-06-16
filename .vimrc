@@ -1,6 +1,7 @@
-" === Miscellaneous ===
+" === Formatting ===
 
 set cursorline
+set number
 
 " Setting tabs vs space specs for file types
 autocmd FileType * set tabstop=2|set shiftwidth=2|set noexpandtab
@@ -9,6 +10,7 @@ autocmd FileType python set tabstop=4|set shiftwidth=4|set expandtab
 set listchars=tab:-->,space:·
 set list
 set shellcmdflag=-ic
+set nowrap
 
 if (has("termguicolors"))
   set termguicolors
@@ -19,6 +21,12 @@ if (has("xterm-true-color"))
 endif
 
 syntax enable
+
+" This must come before the ColorColumn highlight m_definition
+colorscheme desert
+
+set colorcolumn=80,120
+highlight ColorColumn ctermbg=14 guibg=lightyellow
 
 " === Plugins ===
 
