@@ -6,6 +6,7 @@ set number
 " Setting tabs vs space specs for file types
 autocmd FileType * set tabstop=2|set shiftwidth=2|set noexpandtab
 autocmd FileType python set tabstop=4|set shiftwidth=4|set expandtab
+autocmd FileType lua set tabstop=2|set shiftwidth=2|set expandtab
 
 set listchars=tab:-->,space:·
 set list
