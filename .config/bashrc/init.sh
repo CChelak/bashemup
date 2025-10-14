@@ -114,4 +114,5 @@ if ! shopt -oq posix; then
   fi
 fi
 
+export LESS="FRX -j4"
 

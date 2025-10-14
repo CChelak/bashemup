@@ -5,7 +5,6 @@ mkcd() {
     cd -P -- "${1}"
 }
 
-export PLAYDATE_SDK_PATH=/usr/lib/PlaydateSDK-1.12.3
+export PLAYDATE_SDK_PATH=/home/clintc/external/PlaydateSDK-2.7.5
 export PATH=$PATH:${HOME}/bin:${HOME}/.local/bin/
-
 
