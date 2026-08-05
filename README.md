@@ -7,7 +7,7 @@ existing files.
 
 # Installing dependencies
 
-`install-deps.sh` installs the baseline tools. Right now it only knows apt:
+`install-deps.sh` installs the baseline tools from apt and snap
 
 ```bash
 ./install-deps.sh --dry-run   # see what it would install
