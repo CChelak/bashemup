@@ -1,8 +1,20 @@
 # Introduction
+
 My setup on a linux machine or something with a bash terminal.
 
 Copy the files into the home directory of the terminal. Or append them to
 existing files.
+
+# Installing dependencies
+
+`install-deps.sh` installs the baseline tools. Right now it only knows apt:
+
+```bash
+./install-deps.sh --dry-run   # see what it would install
+./install-deps.sh             # do it
+```
+
+Currently, new packages are added directly into the script
 
 # Setting up plugins for Vim
 
